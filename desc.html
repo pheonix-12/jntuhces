@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>desc</title>
+</head>
+<body>
+	<textarea rows="10" cols="30" id="numbers"></textarea>
+	<button id="button" onclick="show()">submit</button>
+	<p id="ptag"></p>
+	<script type="text/javascript">
+		
+		function show() {
+			// body...
+			var num=(document.getElementById("numbers").value.split(","));
+			num.sort(function(a,b){return b-a});
+			document.getElementById("ptag").innerHTML=num;
+		}
+	</script>
+</body>
+</html>
