@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Country Capitals</title>
+<meta charset="utf-8"/>
+<script type="text/javascript">
+	function dropDownChange(dropdown){
+		var selectedValue =dropdown.options[dropdown.selectedIndex].value;
+		document.getElementById('selectedCapital').innerHTML = selectedValue;
+	}
+</script>
+</head>
+<body>
+<form action="">
+	<select name ="countries" onchange="dropDownChange(this);">
+		<option value="">-----Select a country----</option>
+		<option value="New Delhi">India</option>
+		<option value="abc">New Zealand</option>
+		<option value="xyz">France</option>
+		<option value="pqr">Spain</option>
+	</select>
+<h3 id="selectedCapital" type="text" font-size:100%> </h3>
+</form>
+</body>
+</html>
