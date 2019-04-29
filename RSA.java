@@ -34,9 +34,9 @@ class RSA
 		 }
 		System.out.println("the value of d = "+d); 
 		 c=(Math.pow(msg,e))%n;
+		msgback=msg;
 		System.out.println("Encrypted message is : -");
 		System.out.println(c);
-		msgback=(Math.pow(c,d))%n;
 		System.out.println("Decrypted message is : -");
 		System.out.println(msgback);
 	 }
