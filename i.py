@@ -1,2 +1,2 @@
-def mod(n):
+def square(n):
 	return n*100
